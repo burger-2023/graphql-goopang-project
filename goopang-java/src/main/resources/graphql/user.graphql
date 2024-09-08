@@ -1,0 +1,14 @@
+scalar DateTime
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    cart: Cart!
+    createdAt: DateTime!
+}
+
+input AddUserInput {
+    name: String!
+    email: String!
+}

@@ -1,0 +1,8 @@
+type Query {
+    getUser(userId: ID!): User!
+    getProducts: [Product!]!
+    getUserCart(userId: ID!): Cart!
+    search(keyword: String!): [SearchResult!]!
+}
+
+union SearchResult = User | Electronics | Clothing

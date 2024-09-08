@@ -1,0 +1,9 @@
+type Query {
+    """유저 id를 통해 유저 정보 조회"""
+    getUser(userId: ID!): User!
+    getProducts: [Product!]!
+    getUserCart(userId: ID!): Cart!
+    search(keyword: String!): [SearchResult!]!
+}
+
+union SearchResult = User | Electronics | Clothing

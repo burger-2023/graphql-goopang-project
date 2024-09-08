@@ -1,0 +1,6 @@
+type Mutation {
+    addUser(addUserInput: AddUserInput!): User!
+    addProduct(addProductInput: AddProductInput!): Product!
+    addCartItem(addCartItemInput: AddCartItemInput!): Cart!
+    deleteCartItem(deleteCartItemInput: DeleteCartItemInput!): Cart!
+}

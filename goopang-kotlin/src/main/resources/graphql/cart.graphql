@@ -1,0 +1,23 @@
+type CartItem {
+    id: ID!
+    product: Product!
+    quantity: Int!
+}
+
+type Cart {
+    id: ID!
+    user: User!
+    items: [CartItem!]!
+    totalAmount: Float!
+}
+
+input AddCartItemInput {
+    userId: ID!
+    productId: ID!
+    quantity: Int!
+}
+
+input DeleteCartItemInput {
+    cartItemId: ID!
+    userId: ID!
+}
