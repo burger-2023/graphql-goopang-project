@@ -6,18 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-
     private final String id;
-    private User user;
-    private double totalAmount;
-    private List<CartItem> items;
+    private final User user;
+    private double totalAmount = 0.0;
+    private List<CartItem> items = List.of();
 
-    // Constructor
     public Cart(String id, User user) {
         this.id = id;
         this.user = user;
-        this.items = new ArrayList<>();
-        this.totalAmount = 0.0;
     }
 
     // Getters and setters
@@ -29,12 +25,12 @@ public class Cart {
         return user;
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
-
     public double getTotalAmount() {
         return totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
     public List<CartItem> getItems() {
@@ -42,24 +38,6 @@ public class Cart {
     }
 
     public void setItems(List<CartItem> items) {
-        this.items = items != null ? items : new ArrayList<>();
-        this.totalAmount = calculateTotalAmount();
-    }
-
-    // Helper method to calculate totalAmount
-    private double calculateTotalAmount() {
-        return items.stream()
-                .mapToDouble(item -> item.getProduct().getPrice() * item.getQuantity())
-                .sum();
-    }
-
-    @Override
-    public String toString() {
-        return "Cart{" +
-                "id='" + id + '\'' +
-                ", user=" + user +
-                ", totalAmount=" + totalAmount +
-                ", items=" + items +
-                '}';
+        this.items = items;
     }
 }

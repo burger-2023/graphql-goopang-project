@@ -9,5 +9,4 @@ class AddProductInput(
 
     val warrantyPeriod: String?,
     val size: String?
-) {
-}
+)

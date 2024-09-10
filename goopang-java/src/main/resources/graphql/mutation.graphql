@@ -2,5 +2,5 @@ type Mutation {
     addUser(addUserInput: AddUserInput!): User!
     addProduct(addProductInput: AddProductInput!): Product!
     addCartItem(addCartItemInput: AddCartItemInput!): Cart!
-    deleteCartItem(deleteCartITem: DeleteCartItem!): Cart!
+    deleteCartItem(deleteCartItemInput: DeleteCartItemInput!): Cart!
 }

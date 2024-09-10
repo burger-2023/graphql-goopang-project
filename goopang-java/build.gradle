@@ -24,8 +24,12 @@ dependencies {
     testImplementation 'org.springframework:spring-webflux'
     testImplementation 'org.springframework.graphql:spring-graphql-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    testImplementation 'org.springframework:spring-webflux'
 
-    implementation("com.graphql-java:graphql-java-extended-scalars:22.0")
+    implementation 'com.graphql-java:graphql-java-extended-scalars:22.0'
+
+
 }
 
 tasks.named('test') {

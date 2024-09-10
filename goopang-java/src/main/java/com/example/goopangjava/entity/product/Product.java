@@ -1,8 +1,10 @@
 
 package com.example.goopangjava.entity.product;
 
-public interface Product {
 
+import com.example.goopangjava.entity.SearchResult;
+
+public interface Product extends SearchResult {
     String getId();
     String getName();
     double getPrice();
