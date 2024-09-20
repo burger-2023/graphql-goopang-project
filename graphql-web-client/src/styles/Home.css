@@ -1,0 +1,113 @@
+/* src/styles/Home.css */
+body, html {
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #141414;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+  }
+  
+  .home-header .search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .home-header input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #333;
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .home-header button {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-header button:hover {
+    background-color: #f40612;
+  }
+  
+  .home-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #141414;
+  }
+  
+  .home-nav button {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .home-nav button:hover {
+    background-color: #444;
+    border-color: #555;
+  }
+  
+  .home-main {
+    padding: 20px 0;
+  }
+  
+  .home-main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .home-main ul li {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .home-main ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  }
+  
+  .home-main ul li p {
+    margin: 0;
+    color: #ffffff;
+  }
+  

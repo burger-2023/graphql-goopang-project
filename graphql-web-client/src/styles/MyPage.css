@@ -1,0 +1,53 @@
+/* src/styles/MyPage.css */
+.mypage-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #141414;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .mypage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+  }
+  
+  .mypage-header div:first-child {
+    max-width: 70%;
+  }
+  
+  .mypage-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #e50914;
+  }
+  
+  .mypage-header p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .mypage-header button {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .mypage-header button:hover {
+    background-color: #f40612;
+  }
+  

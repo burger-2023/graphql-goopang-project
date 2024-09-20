@@ -1,0 +1,24 @@
+/* src/styles/UserDetail.css */
+.user-detail-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #141414;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .user-detail-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e50914;
+  }
+  
+  .user-detail-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
